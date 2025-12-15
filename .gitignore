@@ -1,0 +1,33 @@
+# ========================
+# Angular / Node
+# ========================
+node_modules/
+dist/
+.angular/
+npm-debug.log*
+yarn-error.log*
+
+# ========================
+# .NET
+# ========================
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+# ========================
+# Environment files
+# ========================
+.env
+appsettings.Development.json
+appsettings.*.json
+
+# ========================
+# OS / Editor junk
+# ========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
