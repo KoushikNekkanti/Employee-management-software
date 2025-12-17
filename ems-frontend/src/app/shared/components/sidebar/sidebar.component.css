@@ -1,0 +1,64 @@
+aside {
+  width: 60px;
+  background: #bfb6b6;
+  color: white;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+/* EXPANDED */
+aside.expanded {
+  width: 200px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+}
+
+li i {
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* TEXT hidden by default */
+li span {
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* TEXT visible only when expanded */
+aside.expanded li span {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  aside {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    height: calc(100vh - 56px);
+    z-index: 1000;
+  }
+}
+:host {
+  display: block;
+  height: 100%;
+}
+
+aside {
+  height: calc(100vh - 56px); /* header height */
+  background: #241f1f;
+  width: 60px;
+  transition: width 0.3s ease, transform 0.3s ease;
+  overflow: hidden;
+}

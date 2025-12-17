@@ -1,0 +1,27 @@
+.main-content {
+  padding-top: 60px;
+  background: linear-gradient(#cfb5b5, #000);
+  color: white;
+  overflow-y: auto;
+}
+ 
+ 
+
+/* Mobile only */
+@media (max-width: 768px) {
+  app-sidebar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  app-sidebar.expanded {
+    transform: translateX(0);
+  }
+}
+
+
+

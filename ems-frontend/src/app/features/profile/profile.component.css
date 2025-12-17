@@ -1,0 +1,19 @@
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background:  linear-gradient(#241f1f, #716969);
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: none;
+  padding: 6px 16px;
+}

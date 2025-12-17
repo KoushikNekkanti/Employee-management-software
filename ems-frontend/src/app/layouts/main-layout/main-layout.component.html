@@ -1,31 +1,30 @@
 <div class="container-fluid min-vh-100 d-flex flex-column">
 
   <!-- HEADER -->
-  <div class="row" style="border: 2px,rebeccapurple,solid;">
-    <div class="col-12">
+  <div class="row">
+    <div class="col-12 p-0">
       <app-header></app-header>
     </div>
   </div>
 
   <!-- BODY -->
-  <div class="row flex-grow-1" style="border: 2px,rebeccapurple,solid;">
+  <div class="row flex-grow-1 layout-body">
 
-    <!-- SIDEBAR -->
-    <div class="col-12 col-md-3 col-lg-2 bg-light p-0">
-      <app-sidebar></app-sidebar>
-    </div>
+  <div class="col-auto p-0">
+    <app-sidebar></app-sidebar>
+  </div>
+ 
+ 
 
-    <!-- MAIN CONTENT -->
-    <div class="col-12 col-md-9 col-lg-10 p-3">
-      <router-outlet></router-outlet>
-    </div>
-
+  <div class="col p-3 main-content content">
+    <router-outlet></router-outlet>
   </div>
 
+</div>
   <!-- FOOTER -->
-  <div class="row" style="border: 2px,rebeccapurple,solid;">
-    <div class="col-12">
-      <footer>foot</footer>
+  <div class="row">
+    <div class="col-12 p-0">
+      <app-footer></app-footer>
     </div>
   </div>
 

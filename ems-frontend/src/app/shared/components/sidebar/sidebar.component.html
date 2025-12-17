@@ -1,1 +1,39 @@
-<p>sidebar works!</p>
+<aside [class.expanded]="expanded$ | async">
+  <ul>
+    <li routerLink="Profile">
+       <i class="fa-solid fa-user"></i>
+      <span>Profile</span>
+    </li>
+        <li routerLink="Dashboard">
+     <i class="fa-solid fa-grip"></i>
+      <span>Dashboard</span>
+    </li>
+        <li routerLink="Departments">
+      <i class="fa-solid fa-people-roof"></i>
+      <span>Departments</span>
+    </li>
+    <li routerLink="Attendance">
+    <i class="fa-solid fa-calendar-days"></i>
+      <span>Attendance</span>
+    </li>
+    <li routerLink="Leaves">
+      <i class="fa-regular fa-envelope"></i>
+      <span>Leaves</span>
+    </li>
+    <li routerLink="Payroll">
+      <i class="fa-solid fa-coins"></i>
+      <span>Payroll</span>
+    </li>
+        <li routerLink="Performance">
+      <i class="fa-solid fa-bolt"></i>
+      <span>Performance</span>
+    </li>
+        <li routerLink="Requests">
+      <i class="fa-regular fa-bell"></i>
+      <span>Requests</span>
+    </li>
+      
+      
+
+  </ul>
+</aside>
