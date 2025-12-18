@@ -5,15 +5,65 @@
 }
 
 .card {
+    position: relative;
   background:  linear-gradient(#241f1f, #716969);
   color: white;
   padding: 20px;
   border-radius: 16px;
 }
 
+ 
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+ 
+.details {
+  flex: 1;
+}
+
+ 
+.photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;    
+  object-fit: cover;
+  border: 2px solid #555;
+}
+ 
 button {
   margin-top: 10px;
   border-radius: 20px;
   border: none;
   padding: 6px 16px;
+}
+ 
+ 
+.edit-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+ 
+.edit-btn i {
+  font-size: 14px;
+  color: #333;
+}
+
+ 
+.edit-btn:hover {
+  background: #e5e5e5;
 }

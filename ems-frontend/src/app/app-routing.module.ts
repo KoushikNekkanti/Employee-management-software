@@ -9,9 +9,19 @@ import { PayrollComponent } from './features/payroll/payroll.component';
 import { DepartmentsComponent } from './features/departments/departments.component';
 import { PerformanceComponent } from './features/performance/performance.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
+import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { LoginComponent } from './core/auth/login/login.component';
 
 const routes: Routes = [
   // {path:"",component:MainLayoutComponent},
+  {
+  path: '',
+  component: AuthLayoutComponent,
+  children: [
+    { path: 'login', component: LoginComponent },
+    { path: '', redirectTo: 'login', pathMatch: 'full' }
+  ]
+},
   {path:"Main",component:MainLayoutComponent,children: [
     {path:"Dashboard",component:DashboardComponent},
     {path:"Attendance",component:AttendanceComponent},
@@ -21,8 +31,7 @@ const routes: Routes = [
     {path:"Payroll",component:PayrollComponent},
     {path:"Departments",component:DepartmentsComponent},
     {path:"Performance",component: PerformanceComponent},
-    {path:"",redirectTo:"Attendance",pathMatch:"full"}
-
+    {path:"",redirectTo:"Profile",pathMatch:"full"}
   ]},
 
 ];

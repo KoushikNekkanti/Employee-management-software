@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainLayoutComponent } from './layouts/main-layout/main-layout.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 
  
  
@@ -14,6 +15,7 @@ import { CoreModule } from './core/core.module';
   declarations: [
     AppComponent,
     MainLayoutComponent,
+    AuthLayoutComponent,
 
  
   ],

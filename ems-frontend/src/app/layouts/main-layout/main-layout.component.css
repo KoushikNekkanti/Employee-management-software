@@ -21,6 +21,9 @@
   app-sidebar.expanded {
     transform: translateX(0);
   }
+app-sidebar{
+    height: 100vh;
+}
 }
 
 
