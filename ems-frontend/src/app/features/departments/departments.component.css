@@ -1,0 +1,48 @@
+.card {
+    position: relative;
+  background:  linear-gradient(#241f1f, #716969);
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+}
+ 
+.card .list-group-item {
+  background: transparent;   
+  color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.card .list-group-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+.card .card-body {
+  padding: 0;
+}
+
+.card {
+  position: relative;
+  background: linear-gradient(#241f1f, #716969);
+  color: white;
+  border-radius: 16px;
+
+  height: 500px;          /* 👈 required */
+  overflow: hidden;      /* prevent double scroll */
+}
+
+.card .card-body {
+  padding: 0;
+  height: calc(100% - 48px); /* subtract header height */
+  overflow-y: auto;          /* 👈 scrolling here */
+}
+.card .card-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card .card-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.card .card-body::-webkit-scrollbar-track {
+  background: transparent;
+}

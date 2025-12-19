@@ -5,7 +5,16 @@
   background:#241f1f;
   padding: 0 1rem;
 }
-
+.name{
+  margin-right: auto;
+}
+.top{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
 .menu-btn {
   font-size: 20px;
   border: none;

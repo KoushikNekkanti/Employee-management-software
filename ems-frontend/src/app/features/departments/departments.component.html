@@ -1,1 +1,37 @@
-<p>departments works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-header"><h3>Departments</h3></div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush" *ngFor="let dep of departments">
+                        <li class="list-group-item">{{dep}}</li>
+                        <li class="list-group-item"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="col-md-8 col-lg-9">
+      <div class="card emp-card">
+        <div class="card-header">
+          <h3>Team</h3>
+        </div>
+
+        <div class="emp-grid">
+         <ul class="list-group-flush" *ngFor="let emp of departments">
+            <li></li>
+         </ul>
+           
+
+        </div>
+    
+ 
+
+<!-- <ng-template #emptyState>
+  <p>Select a department to view employees</p>
+</ng-template> -->
+
+        </div>
+    </div>
+</div>

@@ -7,6 +7,7 @@ import { MainLayoutComponent } from './layouts/main-layout/main-layout.component
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+import { DepartmentsModule } from './features/departments/departments.module';
 
  
  
@@ -24,6 +25,7 @@ import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component
     AppRoutingModule,
     SharedModule,
     CoreModule,
+    DepartmentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
